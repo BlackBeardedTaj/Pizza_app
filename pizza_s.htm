@@ -1,0 +1,49 @@
+<!DOCTYPE html><html>
+<head>
+   <meta charset="utf-8">
+</head>
+<body>
+   <p><b>X Pizza Service</b></p>
+   
+   <form action="/cgi-bin/Python38/server_pizza.cgi">
+      <p><input type="radio" name="cu" value="S" checked="checked">Regular Customer (5% Discount)
+      <input type="password" name="cp" size="6" maxlength="6">Code<br />
+      <input type="radio" name="cu" value="N"> New Customer</p>
+
+      <table>
+         <tr>
+            <td><input name="ln" size="12"> Last Name</td>
+            <td><input name="fn" size="12"> First Name</td>
+         </tr>
+         <tr>
+            <td><input name="st" size="12"> Street</td>
+            <td><input name="sn" size="12"> Street number</td>
+         </tr>
+         <tr>
+            <td><input name="zp" size="12"> Zipcode</td>
+            <td><input name="lo" size="12"> Location</td>
+         </tr>
+      </table>
+
+      <p>Type:
+      <select name="pt">
+         <option value="Salami">Pizza Salami (6.00 &euro;)</option>
+         <option value="Di Mare">Pizza Di Mare (6.50 &euro;)
+         <option value="Quattro Stagioni">Pizza Quattro Stagioni (7.50 &euro;)</option>
+         <option value="Diavolo" selected="selected">Pizza Diavolo (8.50 &euro;)</option>
+      </select></p>
+
+      <p>Garnish:
+      <select name="ga" multiple size="2">
+         <option value="Chilli Pepper">Extra Chilli Pepper (1.00 &euro;)</option>
+         <option value="Olives">Extra Oliven (1.20 &euro;)</option>
+         <option value="Anchovies">Extra Anchovies (1.50 &euro;)</option>
+      </select></p>
+
+      <p><input type="checkbox" name="fd">Fast Delivery (max. 30 Minutes, 1.50 &euro; extra)</p>
+      <p>Comment: <textarea name="co" rows="3" cols="25"></textarea></p>
+
+      <p><input type="submit"> <input type="reset"></p>
+   </form>
+</body>
+</html>

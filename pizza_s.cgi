@@ -1,4 +1,4 @@
-﻿#!C:\Python38\python.exe
+﻿#!C:\Users\Kompjuter\AppData\Local\Programs\Python\Python38-32\python.exe
 
 import cgi, cgitb
 
